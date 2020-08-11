@@ -20,7 +20,7 @@ finaldata$DateTime<-paste(finaldata$Date,finaldata$Time)
 library(lubridate)
 finaldata$DateTime<-ymd_hms(finaldata$DateTime)
 
-#Creating the third plot
+#Creating the third plot 
 data2$Sub_metering_1<-as.numeric(data2$Sub_metering_1)
 data2$Sub_metering_2<-as.numeric(data2$Sub_metering_2)
 data2$Sub_metering_3<-as.numeric(data2$Sub_metering_3)

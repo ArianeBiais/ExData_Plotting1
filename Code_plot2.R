@@ -20,7 +20,7 @@ finaldata$DateTime<-paste(finaldata$Date,finaldata$Time)
 library(lubridate)
 finaldata$DateTime<-ymd_hms(finaldata$DateTime)
 
-#Creating the second plot
+#Creating the second plot 
 with(finaldata,plot(DateTime,Global_active_power,xlab="",ylab="Global Active Power (kilowatts)",type="l"))
 dev.copy(png,"plot2.png",width=480,height=480)
 dev.off()
